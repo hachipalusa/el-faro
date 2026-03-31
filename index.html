@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
+        header { 
+            background-color: #f8f9fa; 
+            padding: 20px; 
+            text-align: center; 
+            border-bottom: 2px solid #dee2e6;
+        }
+        .logo-placeholder {
+            width: 150px; height: 60px;
+            background-color: #ddd;
+            display: inline-block;
+            line-height: 60px;
+            color: #666;
+            border: 1px dashed #999;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: #343a40;
+            position: sticky;
+            top: 0;
+        }
+        nav ul {
+            list-style: none; margin: 0; padding: 0;
+            display: flex; justify-content: center;
+        }
+        nav ul li a {
+            display: block; color: white;
+            text-decoration: none; padding: 15px 25px;
+            font-weight: bold; transition: 0.3s;
+        }
+        nav ul li a:hover { background-color: #007bff; }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo El Faro" width="150">
+    <h1>Periódico El Faro</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="deporte.html">Deportes</a></li>
+        <li><a href="negocios.html">Negocios</a></li>
+    </ul>
+</nav>
+
+<section id="inicio">
+    <h2>Noticias Generales</h2>
+
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Categoría</th>
+            <th>Contenido</th>
+        </tr>
+        <tr>
+            <td>Nuevo hospital en la región</td>
+            <td>Salud</td>
+            <td>Se inaugura un moderno centro médico que beneficiará a miles de personas.</td>
+        </tr>
+        <tr>
+            <td>Avances tecnológicos 2026</td>
+            <td>Tecnología</td>
+            <td>Nuevas innovaciones prometen cambiar la vida cotidiana en distintas áreas.</td>
+        </tr>
+        <tr>
+            <td>Clima extremo en el país</td>
+            <td>Actualidad</td>
+            <td>Fuertes lluvias afectan distintas zonas, generando alertas preventivas.</td>
+        </tr>
+    </table>
+
+    <h3>Video destacado</h3>
+    <iframe width="315" height="560"
+    src="https://www.youtube.com/embed/AAJ19y4ffWc"
+    title="Video" frameborder="0" allowfullscreen>
+    </iframe>
+
+    <h3>Audio informativo</h3>
+    <audio controls src="audio.mp3"></audio>
+
+</section>
+
+</body>
+</html>

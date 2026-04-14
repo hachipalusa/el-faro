@@ -4,28 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deportes - El Faro</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="footer-links.css">
+    <link rel="stylesheet" href="layout.css">
+
     <style>
-        td {padding: 20px; text-align: justify;vertical-align: top; line-height: 1.6; color: #333; }/* Alinea el texto arriba si hay una celda más corta al lado */
-        table { table-layout: auto; word-wrap: break-word; }/* Evita que la tabla se deforme con texto muy largo */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
-        header { background-color: #f8f9fa; padding: 20px; text-align: center; border-bottom: 2px solid #dee2e6; }
-        .logo-placeholder { width: 150px; height: 60px; background-color: #ddd; display: inline-block; line-height: 60px; color: #666; border: 1px dashed #999; margin-bottom: 10px; }
-        nav { background-color: #343a40; padding: 0; position: sticky; top: 0; }
-        nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
-        nav ul li a { display: block; color: white; text-decoration: none; padding: 15px 25px; font-weight: bold; }
-        nav ul li a:hover { background-color: #28a745; }
-        section { padding: 40px 20px; text-align: center; }
-        table { width: 85%; margin: 20px auto; border-collapse: collapse; text-align: left; }
-        th, td { border: 1px solid #ddd; padding: 12px; }
-        th { background-color: #f2f2f2; }
-        .cat-tag { font-size: 0.8em; background: #28a745; color: white; padding: 3px 8px; border-radius: 4px; }
+        td {
+            padding: 20px;
+            text-align: justify;
+            vertical-align: top;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        table {
+            table-layout: auto;
+            word-wrap: break-word;
+        }
+
+        .logo-placeholder {
+            width: 150px;
+            height: 60px;
+            background-color: #ddd;
+            display: inline-block;
+            line-height: 60px;
+            color: #666;
+            border: 1px dashed #999;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #343a40;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #007bff;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .cat-tag {
+            font-size: 0.8em;
+            background: #28a745;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="logo-placeholder">LOGO EL FARO</div>
-        <h1>Sección Deportes</h1>
+        <img src="logo.png" alt="Logo El Faro" width="150">
+        <h1>Periódico El Faro</h1>
     </header>
+
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -33,34 +105,45 @@
             <li><a href="negocios.html">Negocios</a></li>
         </ul>
     </nav>
+
     <section>
         <h2>Noticias Deportivas</h2>
-        <table>
-            <tr>
-                <th>Título</th>
-                <th>Categoría</th>
-                <th>Contenido</th>
-                <th>Fuente</th>
-            </tr>
-            <tr>
-                <td><b>Nómina de La Roja</b></td>
-                <td><span class="cat-tag">Deportes</span></td>
-                <td>En una esperada conferencia de prensa desde el Complejo Deportivo Juan Pinto Durán, el seleccionador nacional Ricardo Gareca oficializó la lista de 26 convocados para los trascendentales duelos ante Brasil y Colombia. El estratega enfatizó la necesidad de un equilibrio táctico, citando a referentes de la Generación Dorada para aportar jerarquía, mientras integra a jóvenes talentos del torneo local que han mostrado un rendimiento sobresaliente. La preparación se centrará en la presión alta y la eficacia en transiciones rápidas, buscando revertir la falta de gol en las últimas jornadas clasificatorias.</td>
-                <td><a href="https://www.anfp.cl" target="_blank">Ver Fuente</a></td>
-            </tr>
-            <tr>
-                <td><b>Jarry en el Top 20</b></td>
-                <td><span class="cat-tag">Deportes</span></td>
-                <td>El tenis chileno atraviesa un momento de esplendor internacional gracias a la sólida campaña de Nicolás Jarry en el Masters 1000 de Miami. Tras alcanzar los cuartos de final con victorias consecutivas sobre jugadores dentro del Top 10, la raqueta número uno de Chile asegura su posición en la élite mundial. Analistas destacan que su evolución técnica, especialmente en la movilidad lateral y la consistencia del segundo servicio, lo posicionan como un candidato serio para la próxima temporada de tierra batida en Europa, buscando romper la barrera del Top 15 antes de la cita olímpica, dento de los años 2024.</td>
-                <td><a href="https://www.atptour.com" target="_blank">Ver Fuente</a></td>
-            </tr>
-            <tr>
-                <td><b>Maratón de Santiago</b></td>
-                <td><span class="cat-tag">Deportes</span></td>
-                <td>La organización del Maratón de Santiago ha confirmado oficialmente que la 18ª edición del evento se llevará a cabo el domingo 26 de abril de 2026. Con la meta y largada situadas frente al Palacio de La Moneda, se espera la participación de 33.000 corredores en las distancias de 10K, 21K y 42K. Tras el histórico triunfo del chileno Carlos Díaz en 2025, la expectación es máxima. El evento cuenta con certificación internacional y busca consolidar su compromiso con la sustentabilidad urbana, posicionando a la capital chilena como un referente mundial del running.</td>
-                <td><a href="https://www.maratondesantiago.cl" target="_blank">Ver Fuente</a></td>
-            </tr>
-        </table>
+
+        <p id="contador-deportes">Artículos en Deportes: 0</p>
+
+        <div class="contenedor-articulos">
+            <article class="articulo">
+                <h3>Nómina de La Roja</h3>
+                <p><span class="cat-tag">Deportes</span></p>
+                <p>En una esperada conferencia de prensa desde el Complejo Deportivo Juan Pinto Durán, el seleccionador nacional Ricardo Gareca oficializó la lista de 26 convocados para los trascendentales duelos ante Brasil y Colombia. El estratega enfatizó la necesidad de un equilibrio táctico, citando a referentes de la Generación Dorada para aportar jerarquía, mientras integra a jóvenes talentos del torneo local que han mostrado un rendimiento sobresaliente. La preparación se centrará en la presión alta y la eficacia en transiciones rápidas, buscando revertir la falta de gol en las últimas jornadas clasificatorias.</p>
+                <a href="https://www.anfp.cl" target="_blank">Ver Fuente</a>
+            </article>
+
+            <article class="articulo">
+                <h3>Jarry en el Top 20</h3>
+                <p><span class="cat-tag">Deportes</span></p>
+                <p>El tenis chileno atraviesa un momento de esplendor internacional gracias a la sólida campaña de Nicolás Jarry en el Masters 1000 de Miami. Tras alcanzar los cuartos de final con victorias consecutivas sobre jugadores dentro del Top 10, la raqueta número uno de Chile asegura su posición en la élite mundial. Analistas destacan que su evolución técnica, especialmente en la movilidad lateral y la consistencia del segundo servicio, lo posicionan como un candidato serio para la próxima temporada de tierra batida en Europa, buscando romper la barrera del Top 15 antes de la cita olímpica, dentro de los años 2024.</p>
+                <a href="https://www.atptour.com" target="_blank">Ver Fuente</a>
+            </article>
+
+            <article class="articulo">
+                <h3>Maratón de Santiago</h3>
+                <p><span class="cat-tag">Deportes</span></p>
+                <p>La organización del Maratón de Santiago ha confirmado oficialmente que la 18ª edición del evento se llevará a cabo el domingo 26 de abril de 2026. Con la meta y largada situadas frente al Palacio de La Moneda, se espera la participación de 33.000 corredores en las distancias de 10K, 21K y 42K. Tras el histórico triunfo del chileno Carlos Díaz en 2025, la expectación es máxima. El evento cuenta con certificación internacional y busca consolidar su compromiso con la sustentabilidad urbana, posicionando a la capital chilena como un referente mundial del running.</p>
+                <a href="https://www.maratondesantiago.cl" target="_blank">Ver Fuente</a>
+            </article>
+        </div>
     </section>
+
+    <footer>
+        <p>&copy; 2026 El Faro. Todos los derechos reservados.</p>
+        <ul class="footer-links">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

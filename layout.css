@@ -1,0 +1,97 @@
+/* =========================
+   CONTENEDOR PRINCIPAL DE ARTÍCULOS
+   SE UTILIZA CSS GRID PARA LA DISTRIBUCIÓN
+   ========================= */
+.contenedor-articulos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+/* =========================
+   AJUSTES DE LOS ARTÍCULOS EN LA GRILLA
+   ========================= */
+.contenedor-articulos article {
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+/* =========================
+   EFECTO HOVER EN CADA BLOQUE DE ARTÍCULO
+   ========================= */
+.contenedor-articulos article:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.03);
+}
+
+/* Cambio de color del contenido interno al pasar el mouse */
+.contenedor-articulos article:hover h2,
+.contenedor-articulos article:hover h3,
+.contenedor-articulos article:hover p,
+.contenedor-articulos article:hover strong,
+.contenedor-articulos article:hover a {
+    color: white;
+}
+
+/* =========================
+   RESPONSIVIDAD PARA TABLET Y CELULAR
+   ========================= */
+@media (max-width: 768px) {
+    .contenedor-articulos {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 12px;
+    }
+}
+/*FORMULARIO DE ARTÍCULOS*/
+#formArticulo {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formArticulo input,
+#formArticulo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#formArticulo button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#formArticulo button:hover {
+    background-color: #333;
+}
+
+/* CONTADOR DE ARTÍCULOS */
+#contador-articulos {
+    background-color: #ffffff;
+    color: #222;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    margin: 20px;
+    padding: 12px 15px;
+    border-left: 5px solid #e74c3c;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,93 @@
+/* =========================
+   ESTILOS GENERALES DEL SITIO
+   ========================= */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* =========================
+   ENCABEZADO PRINCIPAL
+   ========================= */
+header {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 3px solid #e74c3c;
+}
+
+/* Imagen del logo */
+header img {
+    margin-bottom: 10px;
+}
+
+/* Título principal del sitio */
+header h1 {
+    margin: 0;
+}
+
+/* =========================
+   SECCIÓN PRINCIPAL
+   ========================= */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* =========================
+   ESTILO BASE DE ARTÍCULOS
+   ========================= */
+article,
+.noticia {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   ESTILOS DE TABLAS
+   ========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+/* =========================
+   ELEMENTOS MULTIMEDIA
+   ========================= */
+iframe,
+audio {
+    margin-top: 15px;
+    max-width: 100%;
+}
+/* =========================
+   ESTILOS DE RELOJ
+   ========================= */
+#miReloj {
+    background-color: #eeeeee; /* Un gris suave */
+    color: #333333;           /* Letra oscura */
+    padding: 5px;
+    font-size: 14px;          /* Tamaño estándar */
+    border: 1px solid #cccccc; 
+    display: inline-block;    /* Para que no ocupe todo el ancho */
+    margin-top: 10px;
+}

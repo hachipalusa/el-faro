@@ -4,107 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Faro</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
-        header { 
-            background-color: #f8f9fa; 
-            padding: 20px; 
-            text-align: center; 
-            border-bottom: 2px solid #dee2e6;
-        }
-        .logo-placeholder {
-            width: 150px; height: 60px;
-            background-color: #ddd;
-            display: inline-block;
-            line-height: 60px;
-            color: #666;
-            border: 1px dashed #999;
-            margin-bottom: 10px;
-        }
-        nav {
-            background-color: #343a40;
-            position: sticky;
-            top: 0;
-        }
-        nav ul {
-            list-style: none; margin: 0; padding: 0;
-            display: flex; justify-content: center;
-        }
-        nav ul li a {
-            display: block; color: white;
-            text-decoration: none; padding: 15px 25px;
-            font-weight: bold; transition: 0.3s;
-        }
-        nav ul li a:hover { background-color: #007bff; }
 
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
+    <!-- Tipografía externa desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-        }
-        th { background-color: #f2f2f2; }
-    </style>
+    <!-- Archivos CSS del sitio -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="footer-links.css">
+    <link rel="stylesheet" href="layout.css">
 </head>
 <body>
 
-<header>
-    <img src="logo.png" alt="Logo El Faro" width="150">
-    <h1>Periódico El Faro</h1>
-</header>
+    <!-- Encabezado principal -->
+    <header>
+        <img src="logo.png" alt="Logo El Faro" width="150">
+        <h1>Periódico El Faro</h1>
+        <div id="miReloj"></div>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="deporte.html">Deportes</a></li>
-        <li><a href="negocios.html">Negocios</a></li>
-    </ul>
-</nav>
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="deporte.html">Deportes</a></li>
+            <li><a href="negocios.html">Negocios</a></li>
+        </ul>
+    </nav>
 
-<section id="inicio">
-    <h2>Noticias Generales</h2>
+    <!-- NOTICIAS -->
+    <section id="inicio">
+        <h2>Noticias Generales</h2>
 
-    <table>
-        <tr>
-            <th>Título</th>
-            <th>Categoría</th>
-            <th>Contenido</th>
-        </tr>
-        <tr>
-            <td>Nuevo hospital en la región</td>
-            <td>Salud</td>
-            <td>Se inaugura un moderno centro médico que beneficiará a miles de personas.</td>
-        </tr>
-        <tr>
-            <td>Avances tecnológicos 2026</td>
-            <td>Tecnología</td>
-            <td>Nuevas innovaciones prometen cambiar la vida cotidiana en distintas áreas.</td>
-        </tr>
-        <tr>
-            <td>Clima extremo en el país</td>
-            <td>Actualidad</td>
-            <td>Fuertes lluvias afectan distintas zonas, generando alertas preventivas.</td>
-        </tr>
-    </table>
+        <!-- CONTADOR -->
+        <p id="contador-total">Total de artículos del sitio: 0</p>
+        <p id="contador-articulos">Artículos en Noticias Generales: 0</p>
 
-    <h3>Video destacado</h3>
-    <iframe width="315" height="560"
-    src="https://www.youtube.com/embed/AAJ19y4ffWc"
-    title="Video" frameborder="0" allowfullscreen>
-    </iframe>
+        <!-- FORMULARIO -->
+        <form id="formArticulo">
+            <input type="text" id="titulo" placeholder="Título del artículo" required>
+            <textarea id="descripcion" placeholder="Descripción del artículo" required></textarea>
+            <button type="submit">Agregar artículo</button>
+        </form>
 
-    <h3>Audio informativo</h3>
-    <audio controls src="audio.mp3"></audio>
+        <!-- ARTÍCULOS -->
+        <div class="contenedor-articulos" id="listaArticulos">
 
-</section>
+            <article class="articulo">
+                <h3>Nuevo hospital en la región</h3>
+                <p><strong>Categoría:</strong> Salud</p>
+                <p>Se inaugura un moderno centro médico que beneficiará a miles de personas.</p>
+            </article>
 
+            <article class="articulo">
+                <h3>Avances tecnológicos 2026</h3>
+                <p><strong>Categoría:</strong> Tecnología</p>
+                <p>Nuevas innovaciones prometen cambiar la vida cotidiana en distintas áreas.</p>
+            </article>
+
+            <article class="articulo">
+                <h3>Clima extremo en el país</h3>
+                <p><strong>Categoría:</strong> Actualidad</p>
+                <p>Fuertes lluvias afectan distintas zonas, generando alertas preventivas.</p>
+            </article>
+
+        </div>
+
+        <!-- MULTIMEDIA -->
+        <h3>Video destacado</h3>
+        <iframe
+            width="315"
+            height="560"
+            src="https://www.youtube.com/embed/AAJ19y4ffWc"
+            title="Video destacado"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <h3>Audio informativo</h3>
+        <audio controls src="audio.mp3"></audio>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <form id="contactForm">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Escriba su mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+
+            <p id="resultadoContacto"></p>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 El Faro. Todos los derechos reservados.</p>
+        <ul class="footer-links">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

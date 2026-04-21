@@ -3,84 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>El Faro - Deportes</title>
+  <title>El Faro - Nacional</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
 
-  <!-- Barra de avisos -->
   <div class="notification is-danger has-text-centered mb-0">
-    <strong>Última Hora:</strong> Resultados deportivos en vivo
+    <strong>Última Hora:</strong> Noticias nacionales en actualización
   </div>
 
-  <!-- Encabezado -->
   <section class="hero is-dark">
     <div class="hero-body has-text-centered">
       <h1 class="title">El Faro</h1>
-      <h2 class="subtitle">Sección Deportes</h2>
+      <h2 class="subtitle">Sección Nacional</h2>
     </div>
   </section>
 
-  <!-- Navbar -->
-  <nav class="navbar is-light">
+  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-menu is-active">
         <div class="navbar-start">
           <a class="navbar-item" href="index.html">Inicio</a>
-          <a class="navbar-item" href="nacional.html">Nacional</a>
+          <a class="navbar-item has-text-weight-bold" href="nacional.html">Nacional</a>
           <a class="navbar-item" href="internacional.html">Internacional</a>
-          <a class="navbar-item has-text-weight-bold" href="deporte.html">Deportes</a>
+          <a class="navbar-item" href="deportes.html">Deportes</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Contenido -->
   <section class="section">
     <div class="container">
-      <h3 class="title is-4">Noticias Deportivas</h3>
+      <h3 class="title is-4">Noticias Nacionales</h3>
 
-      <div class="columns is-multiline">
-
-        <div class="column is-4">
+      <div class="columns">
+        <div class="column">
           <div class="card">
             <div class="card-content">
-              <p class="title is-6">Fútbol</p>
-              <p>Equipos nacionales se preparan para el próximo campeonato.</p>
+              <p class="title is-6">Gobierno anuncia nuevas medidas</p>
+              <p>Autoridades informaron nuevas acciones orientadas al desarrollo social y económico del país.</p>
             </div>
           </div>
         </div>
 
-        <div class="column is-4">
+        <div class="column">
           <div class="card">
             <div class="card-content">
-              <p class="title is-6">Tenis</p>
-              <p>Jugador chileno avanza en torneo internacional.</p>
+              <p class="title is-6">Regiones fortalecen proyectos locales</p>
+              <p>Diversas comunas impulsan iniciativas enfocadas en mejorar servicios y espacios públicos.</p>
             </div>
           </div>
         </div>
 
-        <div class="column is-4">
+        <div class="column">
           <div class="card">
             <div class="card-content">
-              <p class="title is-6">Básquetbol</p>
-              <p>Equipo local logra importante victoria en la liga.</p>
+              <p class="title is-6">Educación y tecnología</p>
+              <p>Nuevos programas buscan integrar herramientas digitales en establecimientos del país.</p>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer has-background-dark has-text-light">
     <div class="container">
       <div class="columns">
-
         <div class="column">
           <h4 class="title is-5 has-text-light">El Faro</h4>
-          <p>Noticias deportivas actualizadas.</p>
+          <p>Sitio informativo dedicado a entregar noticias actualizadas y relevantes.</p>
         </div>
 
         <div class="column">
@@ -89,19 +81,23 @@
             <li><a href="index.html" class="has-text-light">Inicio</a></li>
             <li><a href="nacional.html" class="has-text-light">Nacional</a></li>
             <li><a href="internacional.html" class="has-text-light">Internacional</a></li>
-            <li><a href="deporte.html" class="has-text-light">Deportes</a></li>
+            <li><a href="deportes.html" class="has-text-light">Deportes</a></li>
           </ul>
         </div>
 
         <div class="column">
           <h4 class="title is-6 has-text-light">Contacto</h4>
-          <p>contacto@elfaro.cl</p>
+          <ul>
+            <li>Email: contacto@elfaro.cl</li>
+            <li>Teléfono: +56 9 1234 5678</li>
+            <li>Instagram: @elfaro.cl</li>
+          </ul>
         </div>
-
       </div>
 
       <hr>
-      <p class="has-text-centered">© 2026 El Faro</p>
+
+      <p class="has-text-centered">© 2026 El Faro - Todos los derechos reservados</p>
     </div>
   </footer>
 

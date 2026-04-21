@@ -1,116 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Faro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Faro</title>
 
-    <!-- Tipografía externa desde Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Archivos CSS del sitio -->
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="footer-links.css">
-    <link rel="stylesheet" href="layout.css">
+  <!-- Framework Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
 
-    <!-- Encabezado principal -->
-    <header>
-        <img src="logo.png" alt="Logo El Faro" width="150">
-        <h1>Periódico El Faro</h1>
-        <div id="miReloj"></div>
-    </header>
+  <!-- Barra superior de avisos -->
+  <div class="notification is-danger has-text-centered mb-0">
+    <strong>Última Hora:</strong> Noticias en desarrollo y actualizaciones en tiempo real
+  </div>
 
-    <!-- Navegación -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="deporte.html">Deportes</a></li>
-            <li><a href="negocios.html">Negocios</a></li>
-        </ul>
-    </nav>
+  <!-- Encabezado -->
+  <section class="hero is-dark">
+    <div class="hero-body has-text-centered">
+      <h1 class="title">El Faro</h1>
+      <h2 class="subtitle">Noticias al instante</h2>
+    </div>
+  </section>
 
-    <!-- NOTICIAS -->
-    <section id="inicio">
-        <h2>Noticias Generales</h2>
+  <!-- Menu principal -->
+  <nav class="navbar is-light">
+    <div class="container">
+      <div class="navbar-menu is-active">
+        <div class="navbar-start">
+          <a class="navbar-item has-text-weight-bold" href="index.html">Inicio</a>
+          <a class="navbar-item" href="nacional.html">Nacional</a>
+          <a class="navbar-item" href="internacional.html">Internacional</a>
+          <a class="navbar-item" href="deporte.html">Deportes</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-        <!-- CONTADOR -->
-        <p id="contador-total">Total de artículos del sitio: 0</p>
-        <p id="contador-articulos">Artículos en Noticias Generales: 0</p>
+  <!-- Accesos rapidos (separados del menu) -->
+  <section class="section py-4">
+    <div class="container">
+      <h3 class="title is-5">Accesos rapidos</h3>
+      <div class="buttons">
+        <a class="button is-link is-light" href="nacional.html">Política</a>
+        <a class="button is-info is-light" href="nacional.html">Economía</a>
+        <a class="button is-success is-light" href="internacional.html">Tecnología</a>
+        <a class="button is-warning is-light" href="internacional.html">Cultura</a>
+      </div>
+    </div>
+  </section>
 
-        <!-- FORMULARIO -->
-        <form id="formArticulo">
-            <input type="text" id="titulo" placeholder="Título del artículo" required>
-            <textarea id="descripcion" placeholder="Descripción del artículo" required></textarea>
-            <button type="submit">Agregar artículo</button>
-        </form>
+  <!-- Contenido principal -->
+  <section class="section pt-0">
+    <div class="container">
+      <div class="columns">
 
-        <!-- ARTÍCULOS -->
-        <div class="contenedor-articulos" id="listaArticulos">
-
-            <article class="articulo">
-                <h3>Nuevo hospital en la región</h3>
-                <p><strong>Categoría:</strong> Salud</p>
-                <p>Se inaugura un moderno centro médico que beneficiará a miles de personas.</p>
-            </article>
-
-            <article class="articulo">
-                <h3>Avances tecnológicos 2026</h3>
-                <p><strong>Categoría:</strong> Tecnología</p>
-                <p>Nuevas innovaciones prometen cambiar la vida cotidiana en distintas áreas.</p>
-            </article>
-
-            <article class="articulo">
-                <h3>Clima extremo en el país</h3>
-                <p><strong>Categoría:</strong> Actualidad</p>
-                <p>Fuertes lluvias afectan distintas zonas, generando alertas preventivas.</p>
-            </article>
-
+        <!-- Noticia destacada -->
+        <div class="column is-8">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img src="img/noticia.jpg" alt="Noticia destacada">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title">Noticia Destacada del Dia</p>
+              <p class="subtitle">
+                Autoridades entregan nuevo informe sobre la situación nacional
+              </p>
+              <p>
+                Durante la jornada de hoy, diversas autoridades entregaron un balance
+                actualizado sobre los principales acontecimientos que marcan la agenda
+                nacional, generando gran impacto en la ciudadanía.
+              </p>
+              <br>
+              <a class="button is-dark">Leer más</a>
+            </div>
+          </div>
         </div>
 
-        <!-- MULTIMEDIA -->
-        <h3>Video destacado</h3>
-        <iframe
-            width="315"
-            height="560"
-            src="https://www.youtube.com/embed/AAJ19y4ffWc"
-            title="Video destacado"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
+        <!-- Noticias secundarias -->
+        <div class="column is-4">
+          <h3 class="title is-5">Otras Noticias</h3>
 
-        <h3>Audio informativo</h3>
-        <audio controls src="audio.mp3"></audio>
-    </section>
+          <div class="card mb-4">
+            <div class="card-content">
+              <p class="title is-6">Economía</p>
+              <p>Nuevas medidas económicas comienzan a regir esta semana.</p>
+            </div>
+          </div>
 
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2>Contacto</h2>
+          <div class="card mb-4">
+            <div class="card-content">
+              <p class="title is-6">Internacional</p>
+              <p>Líderes mundiales se reúnen para abordar desafíos globales.</p>
+            </div>
+          </div>
 
-        <form id="contactForm">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-6">Deportes</p>
+              <p>Equipos nacionales se preparan para encuentros importantes.</p>
+            </div>
+          </div>
+        </div>
 
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" placeholder="Escriba su mensaje"></textarea>
+      </div>
+    </div>
+  </section>
 
-            <button type="submit">Enviar</button>
+  <!-- Footer -->
+  <footer class="footer has-background-dark has-text-light">
+    <div class="container">
+      <div class="columns">
 
-            <p id="resultadoContacto"></p>
-        </form>
-    </section>
+        <div class="column">
+          <h4 class="title is-5 has-text-light">El Faro</h4>
+          <p>
+            Sitio informativo dedicado a entregar noticias actualizadas
+            y relevantes a la comunidad.
+          </p>
+        </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 El Faro. Todos los derechos reservados.</p>
-        <ul class="footer-links">
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Política de Privacidad</a></li>
-            <li><a href="#">Términos y Condiciones</a></li>
-        </ul>
-    </footer>
+        <div class="column">
+          <h4 class="title is-6 has-text-light">Secciones</h4>
+          <ul>
+            <li><a href="index.html" class="has-text-light">Inicio</a></li>
+            <li><a href="nacional.html" class="has-text-light">Nacional</a></li>
+            <li><a href="internacional.html" class="has-text-light">Internacional</a></li>
+            <li><a href="deporte.html" class="has-text-light">Deportes</a></li>
+          </ul>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="column">
+          <h4 class="title is-6 has-text-light">Contacto</h4>
+          <ul>
+            <li>Email: contacto@elfaro.cl</li>
+            <li>Teléfono: +56 9 1234 5678</li>
+            <li>Instagram: @elfaro.cl</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <p class="has-text-centered">
+        © 2026 El Faro - Todos los derechos reservados
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
